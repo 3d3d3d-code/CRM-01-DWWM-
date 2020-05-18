@@ -27,12 +27,13 @@ if ((choix_ia - choix_joueur) === 1 ) {
         }
     else if((choix_ia - choix_joueur) === 1 ){
     score_joueur += 1 ;
-    else{
+    }else{
 
         console.log(`aucun point attribue`)
     }
-    
 
 }
 }
+}
+
 while (score_ia < 10 && score_joueur < 10 && score_joueur>= 0);
