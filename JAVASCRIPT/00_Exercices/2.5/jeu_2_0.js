@@ -1,3 +1,21 @@
+
+
+const readline = require('readline');
+
+params = {
+    input: process.stdin,
+    output: process.stdout,
+};
+
+const rl = readline.createInterface(params);
+
+rl.question('taper un truc', answer => {
+    console.log('Vous avez répondu ' + answer);
+    rl.close();
+});
+
+
+ 
 let choix_joueur;// undefined
 let choix_ia = 0;
 let score_joueur = 0;
@@ -7,8 +25,11 @@ let score_ia = 0;
 do {
 
 
-    choix_ia = Math.round(Math.random()) * 2;  // random
-    choix_joueur = `saisie utilisateur`;  // on voit plus tard il faut charger le module grace a node js
+    choix_ia = Math.round(Math.random()) * 2;  // random'
+
+
+    choix_joueur = ('entrer le chiffre');  // on voit plus tard il faut charger le module grace a node js
+   
 if(choix_joueur<0){
     console.log(`le joueur souhaite arreter`)
 
