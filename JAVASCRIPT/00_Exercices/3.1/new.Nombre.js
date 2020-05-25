@@ -1,4 +1,4 @@
-var collection = [12, 23, 35, 42, 56, 63, 74, 88, 99]
+/*var collection = [12, 23, 35, 42, 56, 63, 74, 88, 99]
 console.log(collection);
 var N;
 
@@ -19,6 +19,22 @@ collection.forEach(N) => console.log(i);
 
 }*/
 
+
+function parcourir(){
+
+var collection =[12,23,45,32,67,88,93];
+
+for( var i=0 ;i<collection.length;i++ ){
+
+    console.log("äffichage elements du tableau : " + collection[i]);
+
+}
+
+
+ 
+
+}
+parcourir();
 
 
 
