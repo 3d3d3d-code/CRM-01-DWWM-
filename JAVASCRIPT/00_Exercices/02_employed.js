@@ -13,85 +13,43 @@
 
 
 
-function Employe() {
-    id;
-    lastname;
-    firstname;
-    email;
-    role;
-    salary;
-    hiredate;
-};
-
- var Employe = {
+class Employee {
 
 
-    id: 1,
-    lastname: 'Doe',
-    firstname: 'John',
-    email: 'Doe@aol.com',
-    role: 'manager',
-    salary: 82000,
-    hiredate: '2020-12-28',
-},
-
-
-Employe = {
-
-
-    id: 2,
-    lastname: 'reda',
-    firstname: 'tort',
-    email: 'dit@orange.en',
-    role: 'paresseux',
-    salary: 20000,
-    hiredate: '2020-12-28',
-
-
-},
-
- Employe = {
-
-
-    id: 3,
-    lastname: 'Beau',
-    firstname: 'tan',
-    email: 'beau@aol.com',
-    role: 'Dynamic',
-    salary: 52000,
-    hiredate: '2014-09-17',
-
-
-},
-
- Employe = {
-
-
-    id: 4,
-    lastname: 'jean',
-    firstname: 'Parle',
-    email: '',
-    role: 'unemplyed',
-    salary: 10000,
-    hiredate: '2000-11-26',
-
-
-},
-
- Employe = {
-
-
-    id: 5,
-    lastname: 'Flip',
-    firstname: 'Book',
-    email: 'Doe@aol.com',
-    role: 'manager',
-    salary: 100000,
-    hiredate: '2020-12-28',
-
-    
+    constructor(id, lastname, firstname, email, role, salary, hiredate) {
+        this.id = id;
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.email = email;
+        this.role = role;
+        this.salary = salary;
+        this.hiredate = hiredate;
+    }
 }
-console.log(Employe);
+
+
+var employee1 = new Employee(1, 'Doe', 'John', '', 'manager', 82000, new Date('2020-12-28'));
+console.log(employee1);
+
+
+const employees = [employee1];
+
+
+
+var employee2 = new Employee(2, 'Jean', 'Passe','Doe@aol.com', 'dessinateur', 95000, new Date('2021-10-17'));
+var employee3 = new Employee(3, 'Punchy', 'Line', 'Doe@aol.com','manager', 82000, new Date('2020-12-28'));
+var employee4 = new Employee(4, 'Doe', 'John', 'Doe@aol.com','manager', 82000, new Date('2020-12-28'));
+var employee4 = new Employee(5, 'What', 'John','Doe@aol.com', 'manager', 82000, new Date('2020-12-28'));
+
+console.log("Il y a " + employees.length + " employé(e)s.");
+
+/*function getEmail(){
+    var email = browserType.slice(0,3);
+    console.log(email)
+
+
+
+  
 
 
 /*function getMonthSalary() {
@@ -119,8 +77,7 @@ var bestSalary = salary.length;
 Console.log(salary);
 
 
-//const Employes = [employe1];
-console.log(Employes.length);*/
+//*/
 
 
 
@@ -165,10 +122,7 @@ console.log(MonthSalary)   ;
 
 console.log(getSeniorty);
 
-var employe2 = new Employe(2, 'Jean', 'Passe','Doe@aol.com', 'dessinateur', 95000, new Date('2021-10-17'));
-var employe3 = new Employe(3, 'Punchy', 'Line', 'Doe@aol.com','manager', 82000, new Date('2020-12-28'));
-var employe4 = new Employe(4, 'Doe', 'John', 'Doe@aol.com','manager', 82000, new Date('2020-12-28'));
-var employe4 = new Employe(5, 'What', 'John','Doe@aol.com', 'manager', 82000, new Date('2020-12-28'));
+
 
 for( var i = 0;i<Employe.length;i++)
 
