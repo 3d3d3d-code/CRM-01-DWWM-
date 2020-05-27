@@ -3,45 +3,55 @@ class Employee {
 
 
     constructor(id, lastname, firstname, email, role, salary, hiredate) {
-        this.id = id;
-        this.lastname = lastname;
-        this.firstname = firstname;
-        this.email = (lastname.substring(0, 1) + firstname.substring(0, 1)).toLowerCase();
-        this.role = role;
-        this.salary = salary;
+        this.id = parseInt(id); // NaN
+        this.lastname = lastname || "Ano";
+        this.firstname = firstname || "Nymous";
+
+        this.role = role || "Boulanger";
+        this.salary = parseInt(salary);
         this.hiredate = hiredate;
+
+        this.email = (lastname[0] + firstname).toLowerCase() + '@email.fr';
+
     }
 
+    getMonthSalary() {
 
-
-    function(getMonthSalary) {
-
+        // SALAIRE MENSUEL = SALAIRE ANNUEL /12 
         return Math.round((this.salary / 12) * 0.75);
 
     }
+    getSeniorty() {
 
-    function(getSeniorty) {
-
-
-        var seniority = hiredate - date;
-        console.log(seniority);
-
-
-    }
-    function(getLittleSalary) {
-
-        return Math.min(firstname.salary);
-
+        let now = new Date();
+        let embaucheDate = this.hiredate;
+        let diff = now.getTime() - embaucheDate.getTime();
+        diff = Math.floor(1000*60*60*24)
+        let ans = Math.floor(diff / 365);
+            
+        diff = diff - ans * 365;
     }
 
+    getSeniorty() {
 
+        let now = new Date();
+let y = now.getFullYear( ) - this.hiredate.getFullYear(); // annees
+let m = now.getMonth - this.hiredate.getMonth(); // mois
+let d = now.getDate() - this.hiredate.getMonth(); // jour
+let result;
 
-
+        }
 
 }
 
 
-var employee1 = new Employee(1, 'Doe', 'John', '', 'manager', 82000, new Date('2020-12-28'));
+
+
+
+
+
+
+var employee1 = new Employee(1, 'Doe', 'John', ' ', 'manager', 82000, new Date('2020-12-28'));
 
 console.log(employee1);
 var employees = [employee1];
@@ -53,7 +63,7 @@ console.log(employee2);
 var employee3 = new Employee(3, 'Punchy', 'Line', '', 'faineant', 12000, new Date('2020-12-28'));
 employees.push(employee3);
 
-var employee4 = new Employee(4, 'Pro', 'Fitter', '', 'manager', 56000, new Date('2020-12-28'));
+var employee4 = new Employee(4, 'Pro', 'Fitter', ' ', 'manager', 56000, new Date('2020-12-28'));
 employees.push(employee4);
 var employee5 = new Employee(5, 'What', 'Happened', '', 'skieur', 87000, new Date('2020-12-28'));
 employees.push(employee5);
@@ -64,10 +74,19 @@ console.log();
 for (var i = 0; i < employees.length; i++) {
 
     console.log('les employes se nomment :', employees[i].firstname);
-  //  console.log('le salaire le plus bas est celui de :', Math.min(salary[i].firstname));
+    //  console.log('le salaire le plus bas est celui de :', Math.min(salary[i].firstname));
 }
 
 console.log(employees);
+
+/*  function getLittleSalary() {
+
+     return Math.min(firstname.salary);
+
+ }*/
+
+
+
 
 
 
