@@ -27,12 +27,31 @@ class Employee
         let d = now.getDay() - this.hiredate.getDay(); // difference entre  jour actuel et jour d embauche
         let result = "";
 
-        if (m < 0) {
+        if (m < 0) { // si le mois actuel est inferieur au mois a deduire (le mois de la date d embauche)
 
+            y--; //on deduit un an
+            m += 12; // et l on rajoute 12 au mois actuel
+
+
+
+        } if (d < 0) {      //si le jour actuel est inferieur au jour a deduire
+            m--;//on deduit un mois
+            d = Math.floor(d + 365.25 / 12); //on rajoute au jour le nombre de jours que l on a dans un mois
 
         }
+        if (y > 0) { // si l annnee actuelle est superieure a l année d embauche
 
+            result += y + "ännée(s)";
+        }
+        if (m > 0) {// si le mois actuel est superieur au mois d embauche 
 
+            result += m + "mois";
+
+        }
+        if (d > 0) { // si le jour actuel est superieur au jour d'embauche 
+            result += + "jour(s)";
+
+        }
 
 
 
@@ -59,6 +78,40 @@ console.log(employees);// export des nouveaux employes en console
 for (var i = 0; i < employees.length; i++) {
     console.log("Il y a " + employees.length + " employé(e)s.");//affichage du nombre d employes
 }
+
+// creer les fonctions de tri
+
+var sortDate = function (a, b) { // fonction de tri date ,comparaison
+
+    return a.hiredate - b.hiredate;
+}
+
+var sortSalary = function (a, b) {// fonction de tri salaire ,comparaison
+
+    return a.salary - b.salary;
+}
+
+employees.sort(sortDate);                 //employe le plus ancien grace a la fonction de tri
+let empAncien = employees[0];// le tri etant dans l ordre croissant,la premiere etant la plus ancienne
+console.log(empAncien);    // affichage
+
+employees.sort(sortSalary);
+
+let bestSalary = employees[employees.length - 1]; // plus gros salaire
+let littleSalary = employees[0];// plus petit salaire
+console.log(bestSalary, littleSalary); // affichege des 2
+console.log("la difference de salaire est de : " + (bestSalary - littleSalary));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
