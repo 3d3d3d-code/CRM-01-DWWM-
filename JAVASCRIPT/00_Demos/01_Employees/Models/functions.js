@@ -3,4 +3,4 @@ return a+b
 
 }
 
-module.exports = a;
+module.exports = f ;

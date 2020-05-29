@@ -10,3 +10,6 @@ function b(a,b,c){
 return(a + b) / c;
 
 }
+
+module.exports = f2;
+
