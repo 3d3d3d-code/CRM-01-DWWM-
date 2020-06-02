@@ -2,13 +2,15 @@
  * @class Employee
  */
 
-class Employee 
+class Employee  
 {
 
     /**
      * Constructeur
      */
-    constructor(_id, _lastname, _firstname, _role, _salary, _hiredate) {
+    constructor  (_id, _lastname, _firstname, _role, _salary, _hiredate) {
+
+        
 
         this.id = parseInt(_id); // NaN
         this.lastname = _lastname || "Ano";
@@ -119,10 +121,9 @@ class Employee
 
 
 
-module.exports =  {
-    Employee:Employee
+module.exports =  Employee;
 
-}  ;
+
 
 
 
@@ -153,7 +154,7 @@ employees.push(
     new Employee(4, 'C', 'Réda', 'Prof', 30000, new Date('2019-11-26')),
     new Employee(2, 'A', 'John', 'Videur', 23000, new Date('1520-05-27')),
     new Employee(5, 'D', 'Mike', 'Garagiste', 50000, new Date('2020-05-20')),
-    new Employee(6, 'E', 'Gabi', 'Progamer', 1000000, new Date('2020-05-27')),
+    new Employee(6, 'E', 'Gabi', 'Programer', 1000000, new Date('2020-05-27')),
 );
 
 for(let i = 0; i < employees.length; i++) {

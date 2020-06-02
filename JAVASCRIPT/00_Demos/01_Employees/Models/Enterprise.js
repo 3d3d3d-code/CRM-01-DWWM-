@@ -1,12 +1,11 @@
 
 
-const Employee = require('./Employee.js');
+const Employee = require('./Employee');
 
 /**
  * Gestion d'employés
  */
-class Enterprise 
-{
+class Enterprise {
     constructor() {
         this.employees = [];
     }
@@ -16,14 +15,24 @@ class Enterprise
      * @param  _filter 
      */
     readAll(_filter) {
-        
+        const newEmployees = employee.filter(employee => {
+            return employee.getHigherSalary ;
+
+            
+        })
+        console.log(_employee);
+
     }
+
 
     /**
      * Créer un employé
      * @param Employee _employee 
      */
     create(_employee) {
+        this.employees.push(_employee);
+        //console.log('push ', employee);
+        console.log(this);
 
     }
 
@@ -31,8 +40,10 @@ class Enterprise
      * 
      * @param int _id 
      */
-    read(_id) { 
-
+    read(_id) {
+for (var i =0;i<employee.length;i++)
+ 
+ return _employee[i](_id);
     }
 
     /**
@@ -41,8 +52,10 @@ class Enterprise
      */
     update(_employee) {
 
+this.employee.update(employee);
+console.log()
     }
-    
+
     /**
      * Supprime un employé
      * @param int _id 
@@ -56,13 +69,16 @@ class Enterprise
      * 
      */
     getHigherSalary() {
+return employee.getHigherSalary
 
     }
+    
 
     /**
      * 
      */
     getLowerSalary() {
+        return employee.getLowerSalary
 
     }
 
@@ -74,15 +90,15 @@ class Enterprise
     }
 
 
-    
+
 
 
 
 }
 
 
-module.exports = {
+module.exports = Enterprise;
 
-    Enterprise : Enterprise
 
-} 
+
+

@@ -1,7 +1,14 @@
-const Employee =require('./Models/O1_Employee.js');
+const Employee =require('./Employee.js');
 
 
 var Employee1 = new Employee.Employee();
 
 let role = Employee.roleParDefaut;
 console.log();
+
+
+module.export = {
+
+role : role 
+
+};
