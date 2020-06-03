@@ -16,11 +16,12 @@ class Enterprise {
      */
     readAll(_filter) {
         const newEmployees = employee.filter(employee => {
-            return employee.getHigherSalary ;
+            return employee.getHigherSalary;
 
-            
+
         })
         console.log(_employee);
+
 
     }
 
@@ -41,9 +42,12 @@ class Enterprise {
      * @param int _id 
      */
     read(_id) {
-for (var i =0;i<employee.length;i++)
- 
- return _employee[i](_id);
+
+        for (var i = 0; i < _employee.length; i++) {
+
+            return _id;
+        }
+        console.log(_employee);
     }
 
     /**
@@ -52,8 +56,8 @@ for (var i =0;i<employee.length;i++)
      */
     update(_employee) {
 
-this.employee.update(employee);
-console.log()
+        this.employee.update(employee);
+        console.log()
     }
 
     /**
@@ -61,6 +65,10 @@ console.log()
      * @param int _id 
      */
     delete(_id) {
+        for (var i = 0; i < _employee.length; i++) {
+
+            return _employee.splice(_id);
+        }
 
     }
 
@@ -69,10 +77,10 @@ console.log()
      * 
      */
     getHigherSalary() {
-return employee.getHigherSalary
+        return employee.getHigherSalary
 
     }
-    
+
 
     /**
      * 
