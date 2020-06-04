@@ -1,2 +1,0 @@
-# Javascript
-Apprentissage du langage
