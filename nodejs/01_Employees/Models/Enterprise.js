@@ -64,7 +64,7 @@ class Enterprise
         if(emp !== undefined) {
 
 //const target ={       ,      };
-//const source = {      ,      } ;
+//const source = {      ,      };
 
 //return target =Object.assign(source ,target)
             // retourner une copie de l'employé
@@ -72,9 +72,9 @@ class Enterprise
             // moteur de recherche : MDN JS object assign
             // moteur de recherche newbie: JS cloner objet
 
-var rambo = Object.assign({},Employee1)
-return rambo;
-console.log(rambo);
+//let rambo = Object.assign(myEmployee);
+//return rambo;
+
 
         }
 
