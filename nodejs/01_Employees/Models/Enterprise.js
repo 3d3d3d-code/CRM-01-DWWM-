@@ -129,7 +129,8 @@ return copie ;
      * @returns bool true en cas de succès sinon, false
      */
     delete(_id) {
-        if (_employee._id)
+      // parcourir la liste  employee dans la liste et comparer 
+      // si employee trouvee
         return true;
     }
 
