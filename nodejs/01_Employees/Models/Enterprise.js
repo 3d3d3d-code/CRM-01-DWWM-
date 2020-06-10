@@ -71,7 +71,9 @@ class Enterprise
             // cloner l'objet : let copie = Object.assign()
             // moteur de recherche : MDN JS object assign
             // moteur de recherche newbie: JS cloner objet
-
+            //let o = new Employee();
+let copie= Object.assign(new Employee(),emp);
+return copie ;
 //let rambo = Object.assign(myEmployee);
 //return rambo;
 
@@ -100,7 +102,7 @@ class Enterprise
 
     /**
      * Valide les données et met à jour un employé de la collection
-     * @param Employee _employee 
+     * @param Employee _employee  Une copie d un employe existant
      */
     update(_employee) {
 
@@ -127,8 +129,11 @@ class Enterprise
      * @returns bool true en cas de succès sinon, false
      */
     delete(_id) {
+        if (_employee._id)
         return true;
     }
+
+    if()
 
 
     /**

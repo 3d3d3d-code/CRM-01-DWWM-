@@ -22,7 +22,7 @@ let r2 = ets.readAll(emp => emp.hiredate < new Date());
 
 console.log(r1);
 console.log(r2);
-console.log(rambo);
+console.log();
 
 
 let myEmployee = ets.read(2);
