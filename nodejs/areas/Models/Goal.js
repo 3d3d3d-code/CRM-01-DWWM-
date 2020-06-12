@@ -1,12 +1,12 @@
-class Door{
+class Door {
 
 
-constructor(){
+    constructor(success) {
 
 
 
-    
-}
+
+    }
 
 
 

@@ -1,12 +1,16 @@
-class Door{
+class Door extends Point {
 
-constructor(){
+    constructor(isOpen) {
+        this.isOpen = isOpen;
+
+    }
 
 
-}
+    openClose() {
 
 
 
+    }
 
 
 

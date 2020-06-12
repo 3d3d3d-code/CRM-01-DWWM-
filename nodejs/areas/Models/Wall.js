@@ -1,11 +1,12 @@
-class Wall{
+class Wall {
 
-constructor(){
+    constructor(material) {
+        this.material = material;
 
 
 
 
-}
+    }
 
 
 

@@ -1,0 +1,19 @@
+{
+  "name": "crm-01-dwwm-",
+  "version": "1.0.0",
+  "description": "areas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3d3d3d-code/CRM-01-DWWM-.git"
+  },
+  "author": "reda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3d3d3d-code/CRM-01-DWWM-/issues"
+  },
+  "homepage": "https://github.com/3d3d3d-code/CRM-01-DWWM-#readme"
+}
