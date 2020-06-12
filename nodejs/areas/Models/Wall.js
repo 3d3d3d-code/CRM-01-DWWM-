@@ -1,0 +1,14 @@
+class Wall{
+
+constructor(){
+
+
+
+
+}
+
+
+
+
+
+}

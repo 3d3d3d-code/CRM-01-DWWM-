@@ -1,4 +1,4 @@
-const Employee = require ('./Models/Employee.js');
+const Employee = require('./Models/Employee.js');
 const Enterprise = require('./Models/Enterprise');
 
 
@@ -38,4 +38,4 @@ myEmployee2 = new Employee();
 ets.update(myEmployee2);
 
 
-console.log();
+console.log(); 
