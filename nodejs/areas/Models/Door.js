@@ -7,8 +7,7 @@ class Door extends Point {
 
 
     openClose() {
-
-
+        return this.isOpen;
 
     }
 

@@ -1,13 +1,38 @@
-class Path {
+class Path extends Point {
 
 
-    constructor(player, nbPassage) {
+    constructor(player, nbPassages) {
 
         this.player = player;
-        this.nbPassage = nbPassage;
+        this.nbPassage = nbPassages;
 
 
     }
+
+    isPlayer() {
+
+
+        return this.player;
+
+ }
+ setPlayer(){
+
+     this.player = nPlayer;
+ }
+
+
+ 
+     getNbPassage(){
+
+        return this.getNbPassage;
+     }
+
+     setNbPassages(){
+
+        this.getNbPassage = nNbrePassages;
+     }
+
+
 
 
 
