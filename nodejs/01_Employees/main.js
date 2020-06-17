@@ -1,18 +1,64 @@
-const Employee = require('./Models/Employee.js');
+const Employee = require ('./Models/Employee.js');
 const Enterprise = require('./Models/Enterprise');
 
 
-var employe1 = new Employee(1, 'john', 'Mike', 'DWWM', 50000, new Date());
-var Employe2 = new Employee(2, 'Gaby', 'Crouzet', 'gamer', 600000, new Date());
-var employe3 = new Employee(3, 'Reda', 'Hamza', 'cdd', 20000, new Date());
-const ets = new Enterprise();
+const ets = new Enterprise('DEV2005');
+
+let emp = ets.read(42); // récupère une copie de l'employé 42
+emp.lastname = "Kinporte";
+ets.update(emp);
+ets.save();
+
+console.log(ets.getHighestSalary());
+console.log(ets.getLowestSalary());
+console.log(ets.getSalaryGap());
+
+
+let fake = new Employee();
+/*
+let emp1 = new Employee({
+    id: 42,
+    lastname: "Doe",
+    firstname: "John",
+    role: "???",
+    salary: 10000,
+    hiredate:"2011-04-08"
+});
+
+ets.create(emp1);
+
+ets.save();*/
+return;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ets.create(employe1);
-ets.create(Employe2);
-ets.create(employe3);
-ets.create(new Employee(2, 'Gaby', 'Crouzet', 'gamer', 600000, new Date()));
-
-ets.create(new Employee(3, 'Reda', 'Hamza', 'cdd', 20000, new Date()));
+ets.create(new Employee(2, 'RAB', 'IT', 'CDA', 60000, new Date()));
 
 
 let monFiltre = emp => emp.hiredate > new Date();
@@ -22,13 +68,12 @@ let r2 = ets.readAll(emp => emp.hiredate < new Date());
 
 console.log(r1);
 console.log(r2);
-console.log();
 
 
 let myEmployee = ets.read(2);
 console.log(myEmployee);
 
-myEmployee.firstname = "Gaby";
+myEmployee.firstname = "OT";
 
 ets.update(myEmployee);
 
@@ -38,4 +83,4 @@ myEmployee2 = new Employee();
 ets.update(myEmployee2);
 
 
-console.log(); 
+console.log();

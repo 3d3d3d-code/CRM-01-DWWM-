@@ -11,12 +11,12 @@
  *  - Un mur (Wall) possédant
  *      . un attribut supplémentaire avec accesseur et sans mutateur
  *          material : string
- *  - Une porte (Door) possédant
+ *  - Une porte (Door) 
  *      . un attribut supplémentaire avec accesseur et sans mutateur
  *          isOpen : bool
  *      . une méthode supplémentaire
  *          openClose() : bool
- *  - Un chemin (Path) possédantDoor
+ *  - Un chemin (Path) 
  *      . 2 attributs supplémentaires avec accesseur et mutateur
  *          player : bool
  *          nbPassages : int
@@ -56,6 +56,7 @@
          this.setX(_x || 0);
          this.setY(_y || 0);
      }
+     super()
  
      /**
       * Retourne une représentation textuelle du Point
@@ -141,7 +142,7 @@
      * @returns int distance par rapport à la coordonnée (0,0)
      */
     distanceFromOrigin() {
-        return (this.#x + this.#y);
+        return (Math.abs(this.#x) + Math.abs(this.#y));
     }
  
  }

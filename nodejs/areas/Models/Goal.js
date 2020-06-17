@@ -1,19 +1,15 @@
-class Goal extends Point {
+class Goal extends Point{
 
 
-    constructor(success) {
+constructor(success){
+    this.success = success;
 
-this.success = Boolean;
-
-
-    }
-
-    isSuccess (){
+    
 
 
-        return this.success;
-    }
 
+
+}
 
 
 
