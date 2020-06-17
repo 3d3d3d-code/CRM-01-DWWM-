@@ -6,7 +6,7 @@ class Path extends Point {
         this.player = player;
         this.nbPassage = nbPassages;
 
-
+        super(Point); //rajout en parametre lié au dossier parent
     }
 
     isPlayer() {
@@ -32,13 +32,5 @@ class Path extends Point {
         this.getNbPassage = nNbrePassages;
      }
 
-
-
-
-
-
-
-
-
-
 }
+module.exports = Path;

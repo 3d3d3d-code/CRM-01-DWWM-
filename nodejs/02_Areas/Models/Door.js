@@ -1,8 +1,12 @@
+const Point = require("./Point");
+
 class Door extends Wall {
 
     constructor(isOpen) {
         this.isOpen = isOpen;
 
+
+        super(Wall); //rajout en parametre lié au dossier parent
     }
 
 
@@ -21,5 +25,6 @@ class Door extends Wall {
 
 
 }
+module.exports = Door;  
 
 

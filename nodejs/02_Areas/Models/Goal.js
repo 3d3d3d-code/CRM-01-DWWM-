@@ -1,3 +1,5 @@
+const Point = require("./Point");
+
 class Goal extends Point {
 
 
@@ -5,6 +7,7 @@ class Goal extends Point {
 
 this.success = Boolean;
 
+super(Point);
 
     }
 
@@ -14,9 +17,5 @@ this.success = Boolean;
         return this.success;
     }
 
-
-
-
-
-
 }
+module.exports = Goal;

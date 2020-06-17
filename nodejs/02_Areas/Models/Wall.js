@@ -3,7 +3,7 @@ class Wall extends Point {
     constructor(material) {
         this.material = material;
 
-
+        super(Point); //rajout en parametre lié au dossier parent
     }
 
        getMaterial(){
@@ -15,3 +15,4 @@ class Wall extends Point {
 
 
 }
+module.exports =Wall;

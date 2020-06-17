@@ -1,8 +1,8 @@
 {
   "name": "crm-01-dwwm-",
   "version": "1.0.0",
-  "description": "areas",
-  "main": "main.js",
+  "description": "Demarrage en GIT sur dev\r verification de transfert vers depot",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/3d3d3d-code/CRM-01-DWWM-.git"
   },
-  "author": "reda",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/3d3d3d-code/CRM-01-DWWM-/issues"
