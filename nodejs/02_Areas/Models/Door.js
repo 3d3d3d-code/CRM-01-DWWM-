@@ -6,7 +6,7 @@ class Door extends Wall {
         this.isOpen = isOpen;
 
 
-        super(Wall); //rajout en parametre lié au dossier parent
+        super(Wall);   //rajout en parametre lié au dossier parent  
     }
 
 
