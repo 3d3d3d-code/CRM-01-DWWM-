@@ -22,7 +22,7 @@ class Path extends Point {
 
 
  
-     getNbPassage(){
+     getNbPassage(){ 
 
         return this.getNbPassage;
      }

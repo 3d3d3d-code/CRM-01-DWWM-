@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ProjectTreeState projectID="tdldZU6GAqACTgdi" projectPath="C:\Users\REDA\Documents\GitHub\CRM-01-DWWM-\UML\point.vpp">
+<ProjectTreeState projectID="mvJsW06GAqAAZAke" projectPath="C:\Users\REDA\Desktop\UML\Bank.vpp">
 	<TreeState name="ModelRepository" viewX="0" viewY="0">
 		<ExpandedPath>ModelRepository</ExpandedPath>
+		<SelectedPath>ModelRepository</SelectedPath>
 	</TreeState>
 	<TreeState name="DiagramNavigator" viewX="0" viewY="0">
 		<ExpandedPath>DiagramNavigator</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,UML Diagrams</ExpandedPath>
+		<SelectedPath>ClassDiagram</SelectedPath>
 	</TreeState>
 	<TreeState name="ClassBrowser" viewX="0" viewY="0"/>
 	<TreeState name="LogicalView" viewX="0" viewY="0"/>

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ProjectsViewInfo>
-	<DiagramOpenInfos activeDiagramId="eyJ9006GAqAAZAgj">
+	<DiagramOpenInfos>
 		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="bO7dZU6GAqACTgre" maximized="true" offsetX="0" offsetY="0"/>
-		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="v17d006GAqAAZAb3" maximized="true" offsetX="0" offsetY="0"/>
-		<Info bounds="Re:0.0,0.0,1684.0,925.0" diagramId="eyJ9006GAqAAZAgj" maximized="true" offsetX="0" offsetY="0"/>
 	</DiagramOpenInfos>
 	<DiagramLastActivated>
-		<Diagram id="eyJ9006GAqAAZAgj" time="1592556144310"/>
-		<Diagram id="v17d006GAqAAZAb3" time="1592556144141"/>
-		<Diagram id="bO7dZU6GAqACTgre" time="1592377615685"/>
+		<Diagram id="bO7dZU6GAqACTgre" time="1592717783361"/>
 		<Diagram id="Use Case Statement" time="0"/>
 		<Diagram id="Use Case" time="0"/>
 		<Diagram id="User Story" time="0"/>
