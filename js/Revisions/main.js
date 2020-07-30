@@ -17,7 +17,7 @@ console.log();
 let ets = new Company();
 let employees = ets.getEmployees();
 employees.push(emp);
-employees.push(new Enployee('aa','bb'));
+employees.push(new Employee('aa','bb'));
 emoployees = null;
 console.log(ets.getEmployees());
 

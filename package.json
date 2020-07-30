@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/3d3d3d-code/CRM-01-DWWM-/issues"
   },
-  "homepage": "https://github.com/3d3d3d-code/CRM-01-DWWM-#readme"
+  "homepage": "https://github.com/3d3d3d-code/CRM-01-DWWM-#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
