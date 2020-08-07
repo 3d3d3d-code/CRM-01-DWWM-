@@ -1,33 +1,41 @@
-class Employee {
-    /** @var string firstname */
-    #firstname;
-    /**@var string lastname */
+class Employee
+{
+    /** @var string lastname */
     #lastname;
 
-    constructor(_firstname, _lastname) {
-        this.#firstname = _firstname;
-        this.#lastname = _lastname;
+    /** @var string firstname */
+    #firstname;
 
-    }
-    getFirstname() {
-
-
-        return this.#firstname;
+    
+    constructor(_lastname, _firstname) {
+       this.#lastname = _lastname;
+       this.#firstname = _firstname;
     }
 
-    setFirstname(_firstname) {
-        if (_firstname.length > 1) {
+    getLastname()
+    {
+        return this.#lastname;
+    }
 
-            this.#firstname = _firstname;
+    setLastname(_lastname)
+    {
+        if(_lastname.length > 1) {
+            this.#lastname = _lastname;
         }
     }
-        getInfo()
-        {
-            return " Employee : " + this.#firstname + "  " + this.#lastname;
-        }
 
-
+    getInfo()
+    {
+        return "Employee : " + this.#firstname + " " + this.#lastname;
     }
 
+    toJson()
+    {
+        return JSON.stringify({
+            lastname: this.#lastname,
+            firstname: this.#firstname
+        });
+    }
+}
 
 module.exports = Employee;

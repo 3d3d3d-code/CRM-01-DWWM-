@@ -1,21 +1,17 @@
-const Employee = require("./Employee");
-
-class Company {
-    /**
-       @var employees[] employees
-     */
+class Company
+{
+    /** @var Employee[] employees */
     #employees;
-    constructor() {
 
+    constructor()
+    {
         this.#employees = [];
-
-
     }
-    getEmployees() {
 
+    getEmployees()
+    {
         return this.#employees;
-
     }
-
 }
+
 module.exports = Company;
